@@ -2,6 +2,7 @@
 layout: post
 title: "Exploring Engagement Metrics: Insights from YouTube's Trending Videos"
 date: 2025-03-10
+categories: [data science, YouTube analytics]
 ---
 
 # Exploring Engagement Metrics: Insights from YouTube's Trending Music Videos
