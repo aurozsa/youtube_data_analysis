@@ -3,9 +3,9 @@ import pandas as pd
 # Load dataset
 df = pd.read_csv('youtube_trending_videos.csv')
 
-# Handle missing values
-df['likes'].fillna(0, inplace=True)
-df['comments'].fillna(0, inplace=True)
+# Handle missing values by directly reassigning the modified columns
+df['likes'] = df['likes'].fillna(0)
+df['comments'] = df['comments'].fillna(0)
 
 # Format dates
 df['publish_date'] = pd.to_datetime(df['publish_date'])
