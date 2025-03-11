@@ -17,10 +17,10 @@ plt.xlabel('Publish Date')
 plt.ylabel('Average Views')
 plt.title('Average Views Over Time')
 plt.legend()
-plt.show()
-# Save the plot as an image
+
+# Save the plot as an image before displaying it
 plt.savefig('time_series_plot.png')
-plt.close()  # Close the plot to avoid displaying it multiple times
+plt.close()  # Close the plot to avoid reusing the same figure context
 
 # Plot distribution of views
 plt.figure(figsize=(10, 6))
@@ -28,7 +28,8 @@ sns.histplot(df['views'], bins=20, kde=True)
 plt.title('Distribution of Views')
 plt.xlabel('Views')
 plt.ylabel('Frequency')
-# Save the plot as an image
+
+# Save the plot as an image before displaying it
 plt.savefig('distribution_plot.png')
 plt.close()
 
@@ -39,6 +40,7 @@ corr_matrix = df[['views', 'likes', 'comments']].corr()
 plt.figure(figsize=(8, 6))
 sns.heatmap(corr_matrix, annot=True, cmap='coolwarm', fmt=".2f")
 plt.title('Correlation Matrix')
-# Save the heatmap as an image
+
+# Save the heatmap as an image before displaying it
 plt.savefig('correlation_matrix.png')
 plt.close()
