@@ -1,6 +1,32 @@
-remote_theme: pages-themes/architect@v0.2.0
-url: "https://aurozsa.github.io"
-baseurl: "/youtube_data_analysis"
-plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
-- jekyll-seo-tag
+title: YouTube Data Analysis Blog
+description: "Insights into YouTube analytics and engagement metrics from trending videos."
+author: Austin Rozsa
+author_description: "Exploring data science and storytelling through YouTube trends and metrics."
+
+url: https://aurozsa.github.io
+baseurl: /youtube_data_analysis
+header_image: /assets/img/headerimg.jpg
+
+social:
+    github: aurozsa
+    twitter: 
+    linkedin: 
+    youtube: 
+
+### Advanced Settings
+paginate_path: "blog/page:num/"
+permalink: blog/:title/
+
+sass:
+    style: compressed
+
+markdown: kramdown
+highlighter: rouge
+plugins: [jekyll-paginate]
+paginate: 5
+
+navigation:
+    - title: Home
+      url: /index.html
+    - title: About
+      url: /about

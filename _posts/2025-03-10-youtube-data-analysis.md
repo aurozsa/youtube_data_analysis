@@ -1,8 +1,12 @@
 ---
-layout: default
+layout: post
 title: "Exploring Engagement Metrics: Insights from YouTube's Trending Videos"
 date: 2025-03-10
-categories: [data science, YouTube analytics]
+description: "Analysis of views, likes, and comments on YouTube trending music videos."
+categories: [data-science, youtube-analytics]
+image: "/assets/img/metrics_banner.jpg"
+display_image: true
+permalink: /youtube_data_analysis/2025/03/10/youtube-data-analysis.html
 ---
 
 # Exploring Engagement Metrics: Insights from YouTube's Trending Music Videos
@@ -13,6 +17,7 @@ In today’s digital age, engagement metrics such as views, likes, and comments 
 ## Data Collection
 ### Source and Tools
 The dataset was curated using the YouTube Data API, which provides access to video details, including view counts, likes, comments, and more. By utilizing Python scripts, we gathered a dataset of 500 trending music videos from the platform.
+
 ### Final Datasets
 Our analysis is based on a sample of 200 trending videos, due to limitations in the API's available data and pagination. The dataset includes the following features:
 - Video Title
@@ -22,8 +27,10 @@ Our analysis is based on a sample of 200 trending videos, due to limitations in 
 - Comments
 - Publish Date
 - Trending Date
+
 ### Ethics
 Care was taken to ensure compliance with YouTube’s terms of service. Data collected did not include private or sensitive information, and only publicly available metrics were accessed and analyzed.
+
 ### Collection Process
 - A Python script was used to query the YouTube Data API.
 - Parameters such as "mostPopular" videos in the "Music" category were specified to refine the results.
@@ -43,7 +50,7 @@ The raw dataset contained 200 records, each with seven features:
 ### Cleaning Steps
 - **Handling Missing Values**: Missing values in the "likes" and "comments" columns were filled with 0.
 - **Data Formatting**: Publish and trending dates were converted into a consistent format.
-- **Reduplication**: Duplicate records were removed to ensure unique entries.
+- **Deduplication**: Duplicate records were removed to ensure unique entries.
 - These steps ensured the dataset was ready for exploratory analysis.
 
 ## Exploratory Data Analysis
@@ -56,35 +63,25 @@ Key descriptive statistics were calculated for the dataset:
 | **Likes**    | 200       | 123,737    | 425,388      | 216     | 14,748   | 35,904   | 98,723   | 4,695,439  |
 | **Comments** | 200       | 7,083      | 18,165       | 0       | 1,044    | 2,856    | 6,141    | 180,905    |
 
-
 ### Visual Insights
-### **Views Over Time**
-
+#### **Views Over Time**
 This time-series plot shows how average views change over the publish dates for trending videos:
 
-![Time-Series Plot](assets/time_series_plot.png)
+![Time-Series Plot]({{site.url}}{{site.baseurl}}/assets/img/time_series_plot.png)
 
----
-
-### **Distribution of Views**
-
+#### **Distribution of Views**
 The histogram below illustrates the distribution of views for the trending videos:
 
-![Distribution Plot](assets/distribution_plot.png)
+![Distribution Plot]({{site.url}}{{site.baseurl}}/assets/img/distribution_plot.png)
 
----
-
-### **Correlation Matrix**
-
+#### **Correlation Matrix**
 The heatmap below highlights the correlation between views, likes, and comments:
 
-![Correlation Matrix](assets/correlation_matrix.png)
+![Correlation Matrix]({{site.url}}{{site.baseurl}}/assets/img/correlation_matrix.png)
 
 ### Findings
 - Engagement tends to peak within the first week of a video trending.
-
 - Videos with higher likes and comments are more likely to sustain viewership over time.
-
 - Viral videos show significantly different patterns of engagement compared to non-viral videos.
 
 ## Conclusion
@@ -95,5 +92,6 @@ This analysis highlights the importance of early engagement metrics in determini
 Potential future analyses could incorporate additional features, such as geographic data or video genres, to understand the broader factors influencing video popularity.
 
 ## Resources
-- **GitHub Repository**: https://github.com/aurozsa/youtube_data_analysis
+- **GitHub Repository**: [YouTube Data Analysis](https://github.com/aurozsa/youtube_data_analysis)
 - **Additional Resources**: Articles and documentation on using the YouTube Data API.
+
