@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "Exploring Engagement Metrics: Insights from YouTube's Trending Videos"
 date: 2025-03-10
 categories: [data science, YouTube analytics]
@@ -62,7 +62,7 @@ Key descriptive statistics were calculated for the dataset:
 
 This time-series plot shows how average views change over the publish dates for trending videos:
 
-![Time-Series Plot](time_series_plot.png)
+![Time-Series Plot](assets/time_series_plot.png)
 
 ---
 
@@ -70,7 +70,7 @@ This time-series plot shows how average views change over the publish dates for 
 
 The histogram below illustrates the distribution of views for the trending videos:
 
-![Distribution Plot](distribution_plot.png)
+![Distribution Plot](assets/distribution_plot.png)
 
 ---
 
@@ -78,7 +78,7 @@ The histogram below illustrates the distribution of views for the trending video
 
 The heatmap below highlights the correlation between views, likes, and comments:
 
-![Correlation Matrix](correlation_matrix.png)
+![Correlation Matrix](assets/correlation_matrix.png)
 
 ### Findings
 - Engagement tends to peak within the first week of a video trending.

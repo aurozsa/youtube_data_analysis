@@ -4,6 +4,13 @@ title: "Home"
 ---
 Welcome to my blog! Check out the latest posts below:
 
-{% for post in site.posts %}
-- [{{ post.title }}]({{ post.url }})
-{% endfor %}
+
+<h1>{{ page.title }}</h1>
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
