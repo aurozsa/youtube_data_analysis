@@ -110,7 +110,7 @@ In addition to this analysis, we’ve developed a Streamlit app that allows user
 - **Engagement Analysis**: Investigate metrics like "likes per view" with adjustable thresholds.
 - **Downloadable Data**: Save filtered datasets for offline analysis.
 
-[Explore the Streamlit App Here](link-to-app)
+[Explore the Streamlit App Here](https://app-youtube-app-haqnwoytgjmehi5yyk3k6n.streamlit.app/)
 
 This app provides a hands-on approach for analyzing YouTube's trending videos and discovering trends in engagement metrics.
 
